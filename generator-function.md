@@ -1,3 +1,5 @@
+[< BACK TO INDEX](README.md)
+
 A generator function in JavaScript is a special type of function that allows you to generate a sequence of values over time. It is defined using the `function*` keyword and it can use the `yield` keyword to return a value and pause execution. The function can then be resumed later on, allowing it to yield new values.
 
 Here's an example of a simple generator function that generates a sequence of numbers:

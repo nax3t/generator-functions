@@ -1,3 +1,5 @@
+[< BACK TO INDEX](README.md)
+
 Finding two consecutive entries in a list that sum to a specified value can be accomplished using a generator function in JavaScript.
 
 Here is an example of how to accomplish this:

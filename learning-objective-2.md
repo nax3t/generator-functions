@@ -1,4 +1,6 @@
-In JavaScript, the task of creating a new array that is populated with the contiguous pairwise sums of the elements of an iterable can be accomplished by using a generator function.
+[< BACK TO INDEX](README.md)
+
+In JavaScript, the task of creating a new array that is populated with the contiguous pairwise (any 2 neighboring elements) sums of the elements of an iterable can be accomplished by using a generator function.
 
 Here is an example of how to accomplish this in JavaScript:
 ```javascript
