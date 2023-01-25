@@ -14,4 +14,4 @@ The transpose of this matrix would look like this:
 2, 5, 8
 3, 6, 9
 ```
-As you can see, the first row of the original matrix becomes the first column of the transposed matrix, the second row becomes the second column, and so on. This operation is called transpose and it is commonly denoted by the letter T with a superscript, it's a common operation in linear algebra
+As you can see, the first row of the original matrix becomes the first column of the transposed matrix, the second row becomes the second column, and so on. This operation is called transpose and it is commonly denoted by the letter T with a superscript, it's a common operation in linear algebra.
