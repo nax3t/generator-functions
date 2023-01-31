@@ -27,3 +27,21 @@ One real-world use case for generator functions is implementing infinite scrolli
 Another use case is for an iterator object that can be used with the for...of loop. The generator function can create an iterator object that can be used to iterate through a collection of data, such as an array of items, without the need to load all the data into memory at once.
 
 In summary, generator functions are a powerful tool in JavaScript that allow you to generate a sequence of values over time, and they are useful in creating iterator objects that can be used with the for...of loop.
+
+### Additional example
+##### Pagination
+```JS
+function* getPage(list, pageSize = 1) {
+  for (let index = 0; index < list.length; index += pageSize) {
+    yield list.slice(index, index + pageSize);
+  }
+}
+
+const list = [1, 2, 3, 4, 5, 6, 7, 8]
+const page = getPage(list, 3);            // Generator { }
+
+page.next();                              // { value: [1, 2, 3], done: false }
+page.next();                              // { value: [4, 5, 6], done: false }
+page.next();                              // { value: [7, 8], done: false }
+page.next();                              // { value: undefined, done: true }
+```
