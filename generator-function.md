@@ -28,7 +28,7 @@ Another use case is for an iterator object that can be used with the for...of lo
 
 In summary, generator functions are a powerful tool in JavaScript that allow you to generate a sequence of values over time, and they are useful in creating iterator objects that can be used with the for...of loop.
 
-### Additional example
+### Additional examples
 ##### Pagination
 ```JS
 function* getPage(list, pageSize = 1) {
@@ -44,4 +44,20 @@ page.next();                              // { value: [1, 2, 3], done: false }
 page.next();                              // { value: [4, 5, 6], done: false }
 page.next();                              // { value: [7, 8], done: false }
 page.next();                              // { value: undefined, done: true }
+```
+
+##### Passing a value to .next()
+```JS
+function* adder() {
+  let num = 0;
+  while (true) {
+    num += yield num;
+  }
+}
+
+const generator = adder();
+
+console.log(generator.next().value); // 0
+console.log(generator.next(5).value); // 5
+console.log(generator.next(10).value); // 15
 ```
